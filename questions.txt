@@ -1,0 +1,15 @@
+Answers to challenge:
+
+1) Where does the browser "enter" my code? : 
+        -Into the forms whose method and name values can be specified
+
+2) Where does the server "return back" to the browser? : 
+        - Into the params hash
+
+3) When do views get rendered? : 
+        - When the controller calls the view
+
+
+1) What information in the Network tab in the dev tools can I use to debug?
+2) I've only inluded variables in the views. What, if any, other logic should be included in the 'views'?
+3) What role is my browser playing in sending the params values ?

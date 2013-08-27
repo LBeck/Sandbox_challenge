@@ -1,0 +1,61 @@
+<div class="container">
+  <h1>Sinatra Sandbox</h1>
+
+  <table>
+    <tr>
+      <th>File Description</th>
+      <th>File Location</th>
+    </tr>
+    <tr>
+      <td>This view file</td>
+      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The layout file</td>
+      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The current controller</td>
+      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </n>
+  </tr>
+</table>
+<p></p>
+<form action="/cool_url" method="get">
+  (Note that this is outside the text area)
+  Please submit a GET request to /cool_url:
+  <br>
+  <textarea cols = "20" rows= "5" name="user_input">        </textarea>
+  <input type="submit" value="Say it!">
+  <br>
+  <br>
+
+  <input type="radio" name="group1" value="FirstRB"> First RB<br>
+  <input type="radio" name="group1" value="SecondRB" checked> Second RB<br>
+  <input type="radio" name="group1" value="ThirdRB"> Third RB<br>
+
+  <input type="checkbox" name="checkbox_ex" value="first"> checkbox1 <br>
+  <input type="checkbox" name="checkbox_ex" value="second" checked> checkbox2 <br>
+
+</form>
+
+<p></p>
+<form action="/cool_url" method="post">
+  Submit a POST request to /cool_url:
+  <br>
+  <input type="text" name="user_input">
+  <input type="submit" value="Say it!">
+
+  <select name="mydropdown">
+    <option value="first">option1</option>
+    <option value="second">option2</option>
+  </select>
+  <br>
+  <br>
+  <input type="text" name="post[title]">
+  <input type="text" name="post[price]">
+  <textarea name="post[description]"></textarea>
+
+</form>
+
+</div>
